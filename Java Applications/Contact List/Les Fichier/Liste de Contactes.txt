@@ -1,0 +1,10 @@
+Amin  613-123-4567 Ottawa AminPhoto.jpg
+Mikey 613-952-7895 Ottawa MichaelPhoto.jpg
+Ayoub 613-741-8523 Ottawa AnthonyPhoto.jpg
+Khang 613-852-9632 Ottawa KhangPhoto.jpg
+Justin 613-528-9632 Ottawa JustinPhoto.jpg
+Elias 613-896-8514 Conneticut EliasPhoto.jpg
+
+
+
+
