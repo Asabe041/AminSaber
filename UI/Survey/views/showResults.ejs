@@ -1,0 +1,46 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Information</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].name %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Colors</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].color %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Ratings</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].rating %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Meat</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].product %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Music</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].price %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Subject</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].own %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+
+</body>
+</html>
