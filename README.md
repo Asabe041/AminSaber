@@ -1,3 +1,3 @@
 # AminSaber
 
-Just a list of some of the notable projects I've created over the years
+Folders organized by language on containing different projects I have worked on over the years.
