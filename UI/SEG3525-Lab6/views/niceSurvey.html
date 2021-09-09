@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="/assets/styles/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+
+    <h1> Amin's Incredible Survey</h1>
+	  <form >
+		<br>
+		<br>
+		<h3> This is an incredible page, if only Apple could make something like this</h3>
+		<h3> Go see <a href="https://www.apple.com/ca/">Apple's</a> web site, they are in need of better engineers, maybe from UOttawa?</h3>
+		<br>
+		<br>
+		<a href="https://www.apple.com/ca/">
+			<img src="/assets/images/appleFrontPage.PNG" alt="https://www.apple.com/ca/" width="450" height="300">
+		</a>
+		<br>
+		<br>
+    <div id="accordion">
+      <div class="card">
+          <div class="card-header" >
+              <a class="card-link" id="first" data-toggle="collapse" href="#collapseInfo">Personal Information</a>
+          </div>
+          <div id="collapseInfo" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+              <div class="question">
+                <p>Name: <input type="text" name="name" placeholder="John Doe"></p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseColor" role="button">Next!</a>
+              </div>
+            </div>
+          </div>
+      </div>
+	
+      <div class="card">
+        <div class="card-header" >
+          <a class="card-link" id="second" data-toggle="collapse" href="#collapseColor">What Color(s) do you like?</a>
+        </div>
+        <div id="collapseColor" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <div class="question">
+              I like:<br>
+              <input type="checkbox" name="color" value="Red"> Red<br>
+              <input type="checkbox" name="color" value="Green"> Green<br>
+              <input type="checkbox" name="color" value="Blue"> Blue<br>
+              <br>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseRating" role="button">Next!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" >
+            <a class="card-link" id="third" data-toggle="collapse" href="#collapseRating">What would be the Best Type of Rating for this Website</a>
+        </div>
+        <div id="collapseRating" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <div class="question">
+              <select name="rating" id="favorite">
+                <option name="rating" value="Problem Reporting" selected="selected">Problem Reporting</option>
+                <option name="rating" value="Log Analysis">Log Analysis</option>
+                <option name="rating" value="Scientific experiences">Scientific experiences</option>
+                <option name="rating" value="User observations">User observations</option>
+                <option name="rating" value="Surveys">Surveys</option>
+                <option name="rating" value="Usability testing">Usability testing</option>
+              </select>
+              <br>
+              <br>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseProduct" role="button">Next!</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+		<div class="card">
+      <div class="card-header" >
+        <a class="card-link" id="fourth" data-toggle="collapse" href="#collapseProduct">What is your Favorite Apple Product?</a>
+      </div>
+      <div id="collapseProduct" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="question">
+            You can chose multiple answers with ctrl.<br>
+            <select name="product" size="7" multiple>
+                <option name="product" value="iMac">iMac</option>
+                <option name="product" value="iMac">Macbook</option>
+                <option name="product" value="iPad">iPad</option>
+                <option name="product" value="iPhone">iPhone</option>
+                <option name="product" value="Apple Watch">Apple Watch</option>
+                <option name="product" value="Apple TV">Apple TV</option>
+                <option name="product" value="Air Pods">AirPods</option>
+            </select>
+            <br>
+            <br>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapsePrice" role="button">Next!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" >
+        <a class="card-link" id="fifth" data-toggle="collapse" href="#collapsePrice">Do you think Apple Products are too Expensive?</a>
+      </div>
+      <div id="collapsePrice" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="question">
+            <input type="radio" name="price" value="Strongly Disagree">Strongly Disagree<br>
+            <input type="radio" name="price" value="Disagree">Disagree<br>
+            <input type="radio" name="price" value="Neutral">Neutral<br>
+            <input type="radio" name="price" value="Agree">Agree<br>
+            <input type="radio" name="price" value="Strongly Agree">Strongly Agree<br>
+            <br>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseOwn" role="button">Next!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" >
+        <a class="card-link" id="sixth" data-toggle="collapse" href="#collapseOwn">Which Apple Product do you Own?</a>
+      </div>
+      <div id="collapseOwn" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <!-- code inspired from https://www.geeksforgeeks.org/html-design-form/ -->
+          <div class="question">
+            <input type="checkbox" name="own" value="iMac" id="iMac"> 
+            <label for="iMac">iMac</label> 
+            <input type="checkbox" name="own" value="Macbook" id="macbook"> 
+            <label for="macbook">Macbook</label> 
+            <input type="checkbox" name="own" value="iPad" id="iPad"> 
+            <label for="iPad">iPad</label>
+            <input type="checkbox" name="own" value="iPhone" id="iPhone"> 
+            <label for="iPhone">iPhone</label>  
+            <input type="checkbox" name="own" value="Apple Watch" id="apple watch"> 
+            <label for="apple watch">Apple Watch</label> 
+            <input type="checkbox" name="own" value="Apple TV" id="apple TV"> 
+            <label for="apple TV">Apple TV</label> 
+            <input type="checkbox" name="own" value="AirPods" id="airPods"> 
+            <label for="airPods">AirPods</label>  
+          </div>
+        </div>
+      </div>
+    </div>
+		</div>
+    <button type="submit" class="block" id="bb">Submit</button>
+    <p id="thanks"></p>
+		
+	<p id="signature">Site created by Amin Saber</p>
+	
+	</form>
+	<script src="/assets/action.js"></script> 
+  </body>
+</html> 

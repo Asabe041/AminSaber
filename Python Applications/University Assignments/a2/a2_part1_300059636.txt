@@ -1,0 +1,155 @@
+>>> split_tester('12311234','2')
+12, 31, 12, 34
+False
+>>> split_tester('12311231','4')
+1231, 1231
+False
+>>> split_tester("12311234","2")
+12, 31, 12, 34
+False
+>>> split_tester("12311234","4")
+1231, 1234
+True
+>>> split_tester("0012311234","2")
+00, 12, 31, 12, 34
+False
+>>> split_tester("0012311234","5")
+00123, 11234
+True
+>>> split_tester("1","1")
+1
+True
+>>> split_tester("734","1")
+7, 3, 4
+False
+>>> split_tester("734","3")
+734
+True
+>>> 
+
+
+
+*****************************************************
+*                                                   *
+*  __Welcome the increasingsplit tester function__  *
+*                                                   *
+*****************************************************
+What is your name? Amin
+***************************************************************
+*                                                             *
+*  __Amin, welcome to the increasing split tester function__  *
+*                                                             *
+***************************************************************
+Amin, would you like to test if a number admits an increasing-split of give size?      sure
+Please answer with yes or no
+Amin, would you like to test if a number admits an increasing-split of give size? sure
+Please answer with yes or no
+Amin, would you like to test if a number admits an increasing-split of give size?     yEs
+Good choice!
+Enter a positive integer:     123156
+Input the split. The split has to divide the length of 123156 by i.e. 6
+4
+4  does not divide  6
+Amin, would you like to test if a number admits an increasing-split of give size?  YES
+Good choice!
+Enter a positive integer:             123156
+Input the split. The split has to divide the length of 123156 by i.e. 6
+        3
+123, 156
+The sequence is increasing
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:3.4
+3.4  was not a positive integer
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer: -44
+-44  was not a positive integer
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:3331
+Input the split. The split has to divide the length of 3331 by i.e. 4
+2
+33, 31
+The sequence is not increasing
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:twenty
+twenty  was not a positive integer
+Amin, would you like to test if a number admits an increasing-split of give size? yeS
+Good choice!
+Enter a positive integer:4321
+Input the split. The split has to divide the length of 4321 by i.e. 4
+        1
+4, 3, 2, 1
+The sequence is not increasing
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:           4321
+Input the split. The split has to divide the length of 4321 by i.e. 4
+4
+4321
+The sequence is increasing
+Amin, would you like to test if a number admits an increasing-split of give size?      yes
+Good choice!
+Enter a positive integer:-2.5
+-2.5  was not a positive integer
+Amin, would you like to test if a number admits an increasing-split of give size? 0
+Please answer with yes or no
+Amin, would you like to test if a number admits an increasing-split of give size? YES
+Good choice!
+Enter a positive integer:0
+0  was not a positive integer
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:77
+Input the split. The split has to divide the length of 77 by i.e. 2
+2
+77
+The sequence is increasing
+Amin, would you like to test if a number admits an increasing-split of give size? 345
+Please answer with yes or no
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:345
+Input the split. The split has to divide the length of 345 by i.e. 3
+4
+4  does not divide  3
+Amin, would you like to test if a number admits an increasing-split of give size? 345
+Please answer with yes or no
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:345
+Input the split. The split has to divide the length of 345 by i.e. 3
+10
+10  does not divide  3
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:       213411800
+Input the split. The split has to divide the length of 213411800 by i.e. 9
+5
+5  does not divide  9
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:213411800
+Input the split. The split has to divide the length of 213411800 by i.e. 9
+3
+213, 411, 800
+The sequence is increasing
+Amin, would you like to test if a number admits an increasing-split of give size? yes
+Good choice!
+Enter a positive integer:001230
+Input the split. The split has to divide the length of 001230 by i.e. 6
+3
+001, 230
+The sequence is increasing
+Amin, would you like to test if a number admits an increasing-split of give size? uf
+Please answer with yes or no
+Amin, would you like to test if a number admits an increasing-split of give size? ... NO
+Please answer with yes or no
+Amin, would you like to test if a number admits an increasing-split of give size? NO
+************************
+*                      *
+*  __Good bye Amin!__  *
+*                      *
+************************

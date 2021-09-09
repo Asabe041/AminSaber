@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<h1>
+    Amin's Local Loblaws
+</h1>
+
+<body>
+
+<!-- Code for breadcrumb inspired from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
+
+<ul class="breadcrumb">
+  <li><button class="tablinks" onclick="openInfo(event, 'Client')">Client</button></li>
+  <li><button class="tablinks" onclick="openInfo(event, 'Products')">Products</button></li>
+  <li><button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button></li>
+</ul>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
+	What are your preferences:
+    <br>
+	
+	<input type="checkbox" id="Vegetarian" value="Vegetarian">
+	<label for="Vegetarian">Vegetarian</label><br>
+	
+	<input type="checkbox" id="GlutenFree"  value="GlutenFree">
+	<label for="GlutenFree">No Gluten</label><br>
+	
+	<input type="checkbox" id="organic"  value="organic">
+	<label for="organic">Organic</label><br>
+	
+	<input type="checkbox" id="None"  value="None">
+	<label for="None">None</label><br>
+	
+	<button id="dietSelect" onclick="populateListProductChoices(this.id, 'displayProduct', 'displayFruits')">Next</button>
+	</form>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We selected products based on your food preferences</p>
+	 <p>Choose items to buy:</p>
+	 
+	 <p>Fruits:</p>
+	 <div id="displayFruits">
+	 
+	 </div>
+	 
+	 <p>Others:</p>
+	 <div id="displayProduct">
+	 
+	 </div>
+	 
+	 
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		<p>Add selected items to cart.</p>
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>These are the items in your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+<p id="signature">Site created by Amin Saber</p>
+</html>
